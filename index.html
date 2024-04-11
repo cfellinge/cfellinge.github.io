@@ -30,6 +30,7 @@
             color: #fa0;
             text-decoration: none;
         }
+
         a:hover {
             color: #d70;
         }
@@ -52,6 +53,20 @@
             enjoyed my PCB design class, and am looking forward to more advanced project-based classes.</p>
 
         <h2><a href="https://www.cfellinge.github.io/projects">My Projects</a></h2>
+    </div>
+    <div class="content">
+        <div class="blog-post">
+            <h2>FPGA oscilloscope</h2>
+            <p>our oscilloscope will operate in two modes, FORCED and TRIGGERED.
+
+                In FORCED mode the oscilloscope will wait for the user to signal that they want the scope to collect
+                data by pressing a button. The oscilloscope will then fill its BRAMs with sampled data from the AD7606.
+
+                In TRIGGER mode, the oscilloscope will wait for the input waveform on channel 1 to increase through 0V.
+                When this happens, the oscilloscope will start filling its BRAMS with sampled data from the AD7606.
+                After fillings the BRAMs, the oscilloscope will then go back to look for another trigger..</p>
+        </div>
+        <!-- Repeat the above div for each blog post -->
     </div>
 </body>
 
